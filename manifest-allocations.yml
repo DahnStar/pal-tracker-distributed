@@ -1,10 +1,11 @@
 applications:
 - name: tracker-allocations
   path: ./applications/allocations-server/build/libs/allocations-server.jar
-  host: allocations-pal-INITIALS
+  host: allocations-pal-DAJB
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://FILL_ME_IN
+    REGISTRATION_SERVER_ENDPOINT: https://registration-pal-DAJB.apps.cerberus.pal.pivotal.io
+
   services:
   - tracker-allocations-database
